@@ -12,6 +12,6 @@
 - 🔗 Axios - 一个基于 promise 的网络请求库，可以用于浏览器和 node.js
 - 🧰 Husky + Lint-Staged - Git Hook 工具
 - 🛡️ EditorConfig + ESLint + Prettier + Stylelint - 代码规范
-- 🔨 cz-git + Commitizen + Commitlint + husky + Lint_staged - 提交规范 cz-git 工程性更强，轻量级，高度自定义
+- 🔨 cz-git + Commitizen + Commitlint + husky - 提交规范 cz-git 工程性更强，轻量级，高度自定义
 - 💡 GitHub Actions - 自动部署
 - 🎷 pnpm - 速度快、节省磁盘空间的软件包管理器
