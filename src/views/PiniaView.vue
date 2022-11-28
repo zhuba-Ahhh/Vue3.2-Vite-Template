@@ -4,7 +4,9 @@
     <br /><br />
     <div class="count">
       <h1>Count: {{ count }}</h1>
-      <button @click="add">Count++</button>
+      <div class="button">
+        <el-button @click="add">Count++</el-button>
+      </div>
     </div>
   </div>
 </template>
@@ -28,6 +30,11 @@ let add = () => {
     align-items: center;
     div {
       margin: 5px 5px 5px 5px;
+      .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
   }
 }
