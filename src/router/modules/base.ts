@@ -6,8 +6,8 @@ export default [
     component: HomeView,
   },
   {
-    path: "/about",
-    name: "about",
-    component: () => import("@/views/AboutView.vue"),
+    path: "/pinia",
+    name: "pinia",
+    component: () => import("@/views/PiniaView.vue"),
   },
 ];
