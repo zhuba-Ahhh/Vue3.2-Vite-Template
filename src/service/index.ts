@@ -1,7 +1,7 @@
-import Request from "./request";
-import type { AxiosResponse } from "axios";
+import type { AxiosResponse } from 'axios';
+import Request from './request';
 
-import type { RequestConfig } from "./request/types";
+import type { RequestConfig } from './request/types';
 
 export interface YWZResponse<T> {
   statusCode: number;
@@ -35,8 +35,8 @@ const request = new Request({
  * @returns {Promise}
  */
 const ywzRequest = <D = any, T = any>(config: YWZRequestConfig<D, T>) => {
-  const { method = "GET" } = config;
-  if (method === "get" || method === "GET") {
+  const { method = 'GET' } = config;
+  if (method === 'get' || method === 'GET') {
     config.params = config.data;
   }
   return request.request<YWZResponse<T>>(config);

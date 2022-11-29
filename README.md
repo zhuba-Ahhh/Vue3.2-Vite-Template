@@ -9,7 +9,7 @@
 - 📦 Pinia - 值得你喜欢的 Vue Store pinia-plugin-persist 数据持久化
 - 💻 Element Plus Element Plus 基于 Vue 3，面向设计师和开发者的组件库
 - 🎨 Less - CSS 预处理器
-- 🔗 Axios - 一个基于 promise 的网络请求库，可以用于浏览器和 node.js
+- 🔗 Axios - 一个基于 promise 的网络请求库，可以用于浏览器和 Node.js
 - 🧰 Husky + Lint-Staged - Git Hook 工具
 - 🛡️ EditorConfig + ESLint + Prettier + Stylelint - 代码规范
 - 🔨 cz-git + Commitizen + Commitlint + husky - 提交规范 cz-git 工程性更强，轻量级，高度自定义

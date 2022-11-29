@@ -12,12 +12,12 @@
 </template>
 
 <script lang="ts" setup>
-import { useCounterStore } from "@/stores/modules/counter";
-import { computed } from "vue";
-let count = computed(() => useCounterStore().count);
+import { computed } from 'vue';
+import { useCounterStore } from '@/stores/modules/counter';
 
-let add = () => {
-  console.log(1);
+const count = computed(() => useCounterStore().count);
+
+const add = () => {
   useCounterStore().increment();
 };
 </script>
@@ -25,15 +25,17 @@ let add = () => {
 <style lang="less" scoped>
 @media (min-width: 1024px) {
   .about {
-    min-height: 10vh;
     display: flex;
     align-items: center;
+    min-height: 10vh;
+
     div {
-      margin: 5px 5px 5px 5px;
+      margin: 5px;
+
       .button {
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
       }
     }
   }

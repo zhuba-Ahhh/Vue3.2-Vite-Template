@@ -1,10 +1,10 @@
-import { defineStore } from "pinia";
+import { defineStore } from 'pinia';
 
 export const useUserStore = defineStore({
-  id: "user",
+  id: 'user',
   state: () => {
     return {
-      name: "张三",
+      name: '张三',
     };
   },
   persist: {
@@ -12,7 +12,7 @@ export const useUserStore = defineStore({
     strategies: [
       {
         storage: localStorage, // 储存到local 或者 session
-        paths: ["name", "age"], // 指定保存哪些
+        paths: ['name', 'age'], // 指定保存哪些
       },
     ],
   },
