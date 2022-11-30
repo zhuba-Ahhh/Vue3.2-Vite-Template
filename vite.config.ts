@@ -13,10 +13,10 @@ export default defineConfig({
   plugins: [
     vue(),
     AutoImport({
-      resolvers: [ElementPlusResolver()],
+      resolvers: [ElementPlusResolver({})], // 自动引入组件插件配置
     }),
     Components({
-      resolvers: [ElementPlusResolver()],
+      resolvers: [ElementPlusResolver({})],
     }),
   ],
   resolve: {
@@ -36,7 +36,13 @@ export default defineConfig({
     // 允许跨域
     cors: true,
     // 自定义代理规则
-    proxy: {},
+    proxy: {
+      // '/api': {
+      //   target: 'xx',
+      //   changeOrigin: true,
+      //   rewrite: (path) => path.replace(/^\/api/, ''),
+      // },
+    },
   },
   build: {
     // 设置最终构建的浏览器兼容目标

@@ -73,6 +73,17 @@
       "pre-commit": "lint-staged"
     }
   },
+  "lint-staged": {
+    "*.{css,less}": [
+      "npm run lint:style"
+    ],
+    "*.{html,ts,js,json,jsx,tsx}": [
+      "npm run format"
+    ],
+    "*.{js,ts,jsx,tsx}": [
+      "npm run lint"
+    ]
+  },
   "description": "",
   "main": "README.md",
   "repository": {

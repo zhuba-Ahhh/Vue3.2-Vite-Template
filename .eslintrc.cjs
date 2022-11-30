@@ -7,6 +7,7 @@ module.exports = defineConfig({
     node: true,
     jest: true,
     es6: true,
+    es2021: true,
   },
   plugins: ['vue'],
   parser: 'vue-eslint-parser', // Ts中两个parser需要同时使用
