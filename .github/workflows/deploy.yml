@@ -1,4 +1,4 @@
-name: vue3-2-vite-template
+name: Vite Vue Deploy
 
 on:
   push:
