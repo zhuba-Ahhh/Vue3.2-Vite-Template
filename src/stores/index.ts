@@ -1,10 +1,10 @@
 import { createPinia } from 'pinia';
-import piniaPluginPersist from 'pinia-plugin-persist';
+import piniaPluginPersistedstate from 'pinia-plugin-persistedstate';
 import { useCounterStore } from './modules/counter';
 import { useUserStore } from './modules/user';
 
 const store = createPinia();
-store.use(piniaPluginPersist);
+store.use(piniaPluginPersistedstate);
 
 export default store;
 export { useCounterStore, useUserStore };

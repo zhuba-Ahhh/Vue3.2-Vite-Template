@@ -6,7 +6,7 @@
     "lib": [],
     "types": [
       "node",
-      "jsdom"
+      "jsdom",
     ]
   }
 }
